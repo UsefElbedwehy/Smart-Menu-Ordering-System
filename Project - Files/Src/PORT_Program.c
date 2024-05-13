@@ -1,0 +1,22 @@
+#include "STDTYPES.h"
+#include "PORT_Config.h"
+#include "PORT_Private.h"
+#include "PORT_Interface.h"
+#include "PORT_Register.h"
+
+
+void PORT_VoidInit(void)
+{
+	DIO_DDRA=PORTA_DIR;
+	DIO_DDRB=PORTB_DIR;
+	DIO_DDRC=PORTC_DIR;
+	DIO_DDRD=PORTD_DIR;
+
+	DIO_PORTA=PORTA_INITIAL_VALUE;
+	DIO_PORTB=PORTB_INITIAL_VALUE;
+	DIO_PORTC=PORTC_INITIAL_VALUE;
+	DIO_PORTD=PORTD_INITIAL_VALUE;
+
+}
+
+
